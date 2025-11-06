@@ -1,3 +1,0 @@
-[2025-11-06 18:21:58] mail() failed to send.
-[2025-11-06 18:22:00] mail() failed to send.
-[2025-11-06 18:54:25] MAIL_TO not configured in .env
