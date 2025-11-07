@@ -1,7 +1,0 @@
-{
-  "name": "cablehub/contact-mailer",
-  "description": "PHPMailer for contact form",
-  "require": {
-    "phpmailer/phpmailer": "^7.0"
-  }
-}
