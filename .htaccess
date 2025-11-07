@@ -1,0 +1,15 @@
+# Use custom 404 page
+ErrorDocument 404 /404.html
+
+# Optional: redirect directory index to index.html
+DirectoryIndex index.html
+
+# Ensure rewritten requests don't break static files (common for Apache with mod_rewrite)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # If the requested filename exists, serve it directly
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  # Otherwise, serve 404.html with 404 status
+  RewriteRule ^404.html$ - [L]
+</IfModule>
